@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipment and Services</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Equipment and Services</h1>
 
+    <div class="tabs">
+      <div class="tab active" data-target="one-roll-terrain-features">One-Roll Terrain Feature Details</div>
+      <div class="tab" data-target="services">Services and Living Expenses</div>
+      <div class="tab" data-target="armor">Armor</div>
+      <div class="tab" data-target="shields">Shields</div>
+    </div>
+
+    <div id="one-roll-terrain-features" class="tab-content active">
+      <h1>One-Roll Terrain Feature Details</h1>
+      <button onclick="generateTerrainDetails()">Generate</button>
+      <div id="display-how-populated" class="inline-contents"><h4>Populated:</h4></div>
+      <div id="display-how-dangerous" class="inline-contents"><h4>Dangerous:</h4></div>
+      <div id="display-what-use" class="inline-contents"><h4>Use:</h4></div>
+      <div id="display-kind-of-event" class="inline-contents"><h4>Recent Event:</h4></div>
+      <div id="display-what-antagonists" class="inline-contents"><h4>Antagonists:</h4></div>
+      <div id="display-optional-quirk" class="inline-contents"><h4>Optional Quirk:</h4></div>
+    </div>
+
+    <div id="services" class="tab-content">
+      <h2>Services and Living Expenses</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>Cost</th>
+        </tr>
+        <tr>
+          <td>Impoverished lifestyle, per week</td>
+          <td>5 sp</td>
+        </tr>
+        <tr>
+          <td>Common lifestyle, per week</td>
+          <td>20 sp</td>
+        </tr>
+        <!-- Add other rows as needed -->
+      </table>
+    </div>
+
+    <div id="armor" class="tab-content">
+      <h2>Armor</h2>
+      <table>
+        <tr>
+          <th>Light Armors</th>
+          <th>AC</th>
+          <th>Cost</th>
+          <th>Enc</th>
+        </tr>
+        <tr>
+          <td>No Armor</td>
+          <td>10</td>
+          <td>None</td>
+          <td>N/A</td>
+        </tr>
+        <tr>
+          <td>War Shirt</td>
+          <td>11</td>
+          <td>5 sp</td>
+          <td>0</td>
+        </tr>
+        <!-- Add other rows as needed -->
+      </table>
+    </div>
+
+    <div id="shields" class="tab-content">
+      <h2>Shields</h2>
+      <table>
+        <tr>
+          <th>Item</th>
+          <th>AC</th>
+          <th>Cost</th>
+          <th>Enc</th>
+        </tr>
+        <tr>
+          <td>Small Shield</td>
+          <td>1</td>
+          <td>5 sp</td>
+          <td>1</td>
+        </tr>
+        <tr>
+          <td>Large Shield</td>
+          <td>2</td>
+          <td>10 sp</td>
+          <td>2</td>
+        </tr>
+      </table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="one-roll-terrain-feature-details.js"></script>
+  </body>
+</html>
